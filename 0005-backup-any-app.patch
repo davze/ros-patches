@@ -1,8 +1,7 @@
 diff --git a/frameworks/base/core/java/android/content/pm/PackageParser.java b/frameworks/base/core/java/android/content/pm/PackageParser.java
-index 812ae93..1363667 100644
 --- a/frameworks/base/core/java/android/content/pm/PackageParser.java
 +++ b/frameworks/base/core/java/android/content/pm/PackageParser.java
-@@ -3508,8 +3508,7 @@ public class PackageParser {
+@@ -3371,8 +3371,7 @@ public class PackageParser {
                      outError);
          }
  
@@ -13,7 +12,6 @@ index 812ae93..1363667 100644
              ai.flags |= ApplicationInfo.FLAG_ALLOW_BACKUP;
  
 diff --git a/frameworks/base/services/backup/java/com/android/server/backup/utils/AppBackupUtils.java b/frameworks/base/services/backup/java/com/android/server/backup/utils/AppBackupUtils.java
-index 35dfccf..7b2ac6b 100644
 --- a/frameworks/base/services/backup/java/com/android/server/backup/utils/AppBackupUtils.java
 +++ b/frameworks/base/services/backup/java/com/android/server/backup/utils/AppBackupUtils.java
 @@ -72,10 +72,6 @@ public class AppBackupUtils {
@@ -28,7 +26,6 @@ index 35dfccf..7b2ac6b 100644
          // 2. they run as a system-level uid
          if (UserHandle.isCore(app.uid)) {
 diff --git a/frameworks/base/services/core/java/com/android/server/pm/ShortcutPackageInfo.java b/frameworks/base/services/core/java/com/android/server/pm/ShortcutPackageInfo.java
-index 8c7871f..caa78ec 100644
 --- a/frameworks/base/services/core/java/com/android/server/pm/ShortcutPackageInfo.java
 +++ b/frameworks/base/services/core/java/com/android/server/pm/ShortcutPackageInfo.java
 @@ -84,7 +84,7 @@ class ShortcutPackageInfo {
@@ -41,10 +38,9 @@ index 8c7871f..caa78ec 100644
      }
  
 diff --git a/frameworks/base/services/core/java/com/android/server/pm/ShortcutService.java b/frameworks/base/services/core/java/com/android/server/pm/ShortcutService.java
-index ebba128..0cad489 100644
 --- a/frameworks/base/services/core/java/com/android/server/pm/ShortcutService.java
 +++ b/frameworks/base/services/core/java/com/android/server/pm/ShortcutService.java
-@@ -3575,7 +3575,7 @@ public class ShortcutService extends IShortcutService.Stub {
+@@ -4065,7 +4065,7 @@ public class ShortcutService extends IShortcutService.Stub {
      }
  
      static boolean shouldBackupApp(PackageInfo pi) {

@@ -1,7 +1,7 @@
 diff --git a/frameworks/base/core/java/android/content/pm/PackageParser.java b/frameworks/base/core/java/android/content/pm/PackageParser.java
 --- a/frameworks/base/core/java/android/content/pm/PackageParser.java
 +++ b/frameworks/base/core/java/android/content/pm/PackageParser.java
-@@ -3371,8 +3371,7 @@ public class PackageParser {
+@@ -3374,8 +3374,7 @@ public class PackageParser {
                      outError);
          }
  
